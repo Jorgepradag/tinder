@@ -2,7 +2,7 @@ import express from 'express';
 import conexion from './config/database.js'
 
 const app = express()
-
+ 
 async function iniciarServidor(){
     try {
         await conexion.sync({force:false}) 
