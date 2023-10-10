@@ -1,8 +1,8 @@
 import express from 'express';
 import conexion from './config/database.js'
-
+import { Router } from 'express';
 const app = express()
- 
+  
 async function iniciarServidor(){
     try {
         await conexion.sync({force:false}) 
@@ -20,3 +20,5 @@ async function iniciarServidor(){
 }
 
 iniciarServidor()
+
+
